@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: Nigredo -->
+  <Shit_Nigredo.label>黑化的屎</Shit_Nigredo.label>
+  <!-- EN: Nigredo is the beginning of everything, possessing some power, but not much. -->
+  <Shit_Nigredo.description>黑化的屎是一切的开端，拥有一些力量，但不多。</Shit_Nigredo.description>
+  <!-- EN: Take {0} -->
+  <Shit_Nigredo.ingestible.ingestCommandString>吃 {0}</Shit_Nigredo.ingestible.ingestCommandString>
+  <!-- EN: Taking {0}. -->
+  <Shit_Nigredo.ingestible.ingestReportString>吃 {0}中</Shit_Nigredo.ingestible.ingestReportString>
+  
+</LanguageData>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ResearchProjectDef>
+    <defName>ShitRefining</defName>
+    <label>The Refining of Shit</label>
+    <description>With the wisdom of alchemy, I will create great wonders. All things in the heavens and the earth, in the universe, will be discovered, studied, pondered upon, and created by me, ultimately leading to the completion of the Magnum Opus.</description>
+    <baseCost>500</baseCost>
+    <techLevel>Industrial</techLevel>
+    <prerequisites>
+      <li>DrugProduction</li>
+    </prerequisites>
+    <researchViewX>3.00</researchViewX>
+    <researchViewY>0.45</researchViewY>
+    <generalRules>
+      <rulesStrings>
+        <li>subject->The Refining of Shit</li>
+
+        <li>subject_story->has learned the origin of alchemy</li>
+        <li>subject_story->has learned the culmination of alchemy</li>
+        <li>subject_story->has learned how to begin the creation of miracles</li>
+
+        <li>subject_gerund->synthesizing Shit</li>
+      </rulesStrings>
+    </generalRules>
+  </ResearchProjectDef>
+  
+  <ResearchProjectDef>
+    <defName>MagnumRefining</defName>
+    <label>Magnum Opus</label>
+    <description>That which is below is like that which is above and that which is above is like that which is below to do ye miracles of one only thing.That which I have said of ye operation of ye Sun is accomplished ended.</description>
+    <baseCost>1000</baseCost>
+    <techLevel>Industrial</techLevel>
+    <prerequisites>
+      <li>ShitRefining</li>
+    </prerequisites>
+    <researchViewX>3.00</researchViewX>
+    <researchViewY>0.9</researchViewY>
+    <generalRules>
+      <rulesStrings>
+        <li>subject->Magnum Opus</li>
+
+        <li>subject_story->has finally completed the research of the Magnum Opus</li>
+        <li>subject_story->has finally accomplished a great miracle</li>
+        <li>subject_story->is finally reaching the culmination of alchemy</li>
+
+        <li>subject_gerund->synthesizing Magnum Opus</li>
+      </rulesStrings>
+    </generalRules>
+  </ResearchProjectDef>
+
+</Defs>

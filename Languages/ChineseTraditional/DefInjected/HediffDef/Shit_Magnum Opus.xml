@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: reform -->
+  <MagnumOpus_D.label>改造中</MagnumOpus_D.label>
+  <!-- EN: The transformation of the mind and body -->
+  <MagnumOpus_D.description>对精神和身体的改造。</MagnumOpus_D.description>
+  <!-- EN: reform -->
+  <MagnumOpus_D.labelNoun>改造中</MagnumOpus_D.labelNoun>
+  
+  <!-- EN: Magnum Opus need -->
+  <MagnumOpusAddiction.label>伟大之作渴求</MagnumOpusAddiction.label>
+  <!-- EN: The power of the Magnum Opus permeates the entire body, transforming it into a perfect entity, from the physical to the psychological. If one cannot continue to consume the Magnum Opus, they will await death in a state of collapse and paralysis.\n\nWithout the Magnum Opus, the host’s body will collapse until death, ascending to heaven. -->
+  <MagnumOpusAddiction.description>贤者之石的力量将人体改造成完美之物，从身体到内心都是如此，如果不能继续服用贤者之石的话，他会在崩溃和瘫痪中等待飞升天堂的机会。</MagnumOpusAddiction.description>
+  <!-- EN: unmet -->
+  <MagnumOpusAddiction.stages.unmet.label>未满足</MagnumOpusAddiction.stages.unmet.label>
+  
+  <!-- EN: Magnum Opus -->
+  <MagnumOpusHigh.label>伟大之作</MagnumOpusHigh.label>
+  <!-- EN: The power of the Magnum Opus permeates my body, I feel as though I am the embodiment of perfection, it’s as if a deity has descended upon the world. -->
+  <MagnumOpusHigh.description>贤者之石的力量充满了我的身体，我感觉我就是至臻完人，宛如天神重临世间。</MagnumOpusHigh.description>
+  <!-- EN: Magnum Opus -->
+  <MagnumOpusHigh.labelNoun>伟大之作</MagnumOpusHigh.labelNoun>
+  
+</LanguageData>

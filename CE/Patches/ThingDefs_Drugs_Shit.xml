@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<!--黑化-->
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/HediffDef[defName="NigredoHigh"]/stages/li/statOffsets</xpath>
+		<value>
+			<statOffsets>
+				<CarryingCapacity>20</CarryingCapacity>
+				<CarryBulk>10</CarryBulk>
+				<CarryWeight>10</CarryWeight>
+				<ArmorRating_Sharp>3</ArmorRating_Sharp>
+				<ArmorRating_Blunt>6</ArmorRating_Blunt>
+			</statOffsets>
+		</value>
+	</Operation>
+	
+	<!--白化-->
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/HediffDef[defName="AlbedoHigh"]/stages/li/statOffsets</xpath>
+		<value>
+			<statOffsets>
+				<CarryingCapacity>25</CarryingCapacity>
+				<CarryBulk>15</CarryBulk>
+				<CarryWeight>15</CarryWeight>
+				<ArmorRating_Sharp>5</ArmorRating_Sharp>
+				<ArmorRating_Blunt>10</ArmorRating_Blunt>
+				<InjuryHealingFactor>0.2</InjuryHealingFactor>
+			</statOffsets>
+		</value>
+	</Operation>
+	
+	<!--黄化-->
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/HediffDef[defName="CitrinitasHigh"]/stages/li/statOffsets</xpath>
+		<value>
+			<statOffsets>
+				<CarryingCapacity>40</CarryingCapacity>
+				<CarryBulk>20</CarryBulk>
+				<CarryWeight>20</CarryWeight>
+				<ArmorRating_Sharp>8</ArmorRating_Sharp>
+				<ArmorRating_Blunt>16</ArmorRating_Blunt>
+				<ArmorRating_Heat>0.60</ArmorRating_Heat>
+				<ComfyTemperatureMin>-20</ComfyTemperatureMin>
+				<ComfyTemperatureMax>20</ComfyTemperatureMax>
+				<Flammability>-0.5</Flammability>
+				<InjuryHealingFactor>0.6</InjuryHealingFactor>
+				<ToxicEnvironmentResistance>0.4</ToxicEnvironmentResistance><!--毒耐受-->
+				<ToxicResistance>0.4</ToxicResistance><!--毒抗性-->
+				<WorkSpeedGlobal>0.5</WorkSpeedGlobal><!--全局工作速度-->
+			</statOffsets>
+		</value>
+	</Operation>
+	
+	<!--赤化-->
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/HediffDef[defName="RubedoHigh"]/stages/li/statOffsets</xpath>
+		<value>
+			<statOffsets>
+				<CarryingCapacity>50</CarryingCapacity>
+				<CarryBulk>30</CarryBulk>
+				<CarryWeight>30</CarryWeight>
+				<ArmorRating_Sharp>16</ArmorRating_Sharp>
+				<ArmorRating_Blunt>32</ArmorRating_Blunt>
+				<ArmorRating_Heat>1.00</ArmorRating_Heat>
+				<ComfyTemperatureMin>-40</ComfyTemperatureMin>
+				<ComfyTemperatureMax>40</ComfyTemperatureMax>
+				<Flammability>-1.0</Flammability><!--易燃性-->
+				<InjuryHealingFactor>1.25</InjuryHealingFactor><!--愈合能力-->
+				<ImmunityGainSpeed>0.40</ImmunityGainSpeed><!--免疫速度-->
+				<ToxicEnvironmentResistance>1</ToxicEnvironmentResistance><!--毒耐受-->
+				<ToxicResistance>1</ToxicResistance><!--毒抗性-->
+				<WorkSpeedGlobal>1</WorkSpeedGlobal><!--全局工作速度-->
+				<VEF_VerbRangeFactor MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">0.20</VEF_VerbRangeFactor> <!--增加远程射程-->
+			</statOffsets>
+		</value>
+	</Operation>
+	
+	<!--贤者之石-->
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/HediffDef[defName="MagnumOpusHigh"]/stages/li/statOffsets</xpath>
+		<value>
+			<statOffsets>
+				<CarryingCapacity>100</CarryingCapacity>
+				<CarryBulk>60</CarryBulk>
+				<CarryWeight>60</CarryWeight>
+				<ArmorRating_Sharp>32</ArmorRating_Sharp>
+				<ArmorRating_Blunt>64</ArmorRating_Blunt>
+				<ArmorRating_Heat>2.00</ArmorRating_Heat>
+				<ComfyTemperatureMin>-80</ComfyTemperatureMin>
+				<ComfyTemperatureMax>80</ComfyTemperatureMax>
+				<Flammability>-1</Flammability><!--易燃性-->
+				<InjuryHealingFactor>2.0</InjuryHealingFactor><!--愈合能力-->
+				<ImmunityGainSpeed>1.0</ImmunityGainSpeed><!--免疫速度-->
+				<ToxicEnvironmentResistance>1</ToxicEnvironmentResistance><!--毒耐受-->
+				<ToxicResistance>1</ToxicResistance><!--毒抗性-->
+				<WorkSpeedGlobal>1.5</WorkSpeedGlobal><!--全局工作速度-->
+				<VEF_VerbRangeFactor MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">0.40</VEF_VerbRangeFactor> <!--增加远程射程-->
+			</statOffsets>
+		</value>
+	</Operation>
+	
+</Patch>

@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: Magnum Opus -->
+  <Shit_MagnumOpus.label>伟大之作</Shit_MagnumOpus.label>
+  <!-- EN: This is the final product of alchemy, this is the ultimate Magnum Opus. -->
+  <Shit_MagnumOpus.description>这是炼金术的最终产物，这是最终的伟大之作。</Shit_MagnumOpus.description>
+  <!-- EN: Take {0} -->
+  <Shit_MagnumOpus.ingestible.ingestCommandString>吃 {0}</Shit_MagnumOpus.ingestible.ingestCommandString>
+  <!-- EN: Taking {0}. -->
+  <Shit_MagnumOpus.ingestible.ingestReportString>吃 {0}中</Shit_MagnumOpus.ingestible.ingestReportString>
+  
+</LanguageData>

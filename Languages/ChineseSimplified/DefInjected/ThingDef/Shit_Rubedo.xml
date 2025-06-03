@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: Rubedo -->
+  <Shit_Rubedo.label>赤化之屎</Shit_Rubedo.label>
+  <!-- EN: Rubedo is the product obtained from research within the mental space. Although Luciferium is required as a production material, an excellent alchemist would naturally utilize superior techniques to neutralize it. -->
+  <Shit_Rubedo.description>赤化之屎在精神空间里研究获得的产物，虽然需要魔鬼素作为制作材料，但优秀的炼金术师当然会用优秀的技术无害化它。</Shit_Rubedo.description>
+  <!-- EN: Take {0} -->
+  <Shit_Rubedo.ingestible.ingestCommandString>吃 {0}</Shit_Rubedo.ingestible.ingestCommandString>
+  <!-- EN: Taking {0}. -->
+  <Shit_Rubedo.ingestible.ingestReportString>吃 {0}中</Shit_Rubedo.ingestible.ingestReportString>
+  
+</LanguageData>

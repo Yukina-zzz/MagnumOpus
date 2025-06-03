@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: Magnum Opus -->
+  <Chemical_MagnumOpus.label>伟大之作</Chemical_MagnumOpus.label>
+  <!-- EN: After consuming the Magnum Opus, the Magnum Opus will completely transform the host’s physical and mental state, turning them into a perfect being.\nIf the power of the Magnum Opus is lost, the host will struggle to endure the transition from being divine to becoming mortal.\nFurthermore, due to the physical alterations caused by the Magnum Opus, the host will lose control over their body and suffer a mental collapse, leading to death. -->
+  <Chemical_MagnumOpus.description>食用贤者之石后，贤者之石将会彻底重构宿主的身体和精神，使其变成完美生物。\n如果失去贤者之石的力量，宿主会难以忍受自己从神明变成凡人。\n由于贤者之石的对身体的重构，宿主在失去贤者之石的力量后会失去对身体的掌控，而且身体会因为失去力量而无法容纳重构后的精神，最终导致肉体和精神的双重毁灭。</Chemical_MagnumOpus.description>
+  
+</LanguageData>

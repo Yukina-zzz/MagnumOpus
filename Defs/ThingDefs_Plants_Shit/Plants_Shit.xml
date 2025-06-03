@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <ThingDef ParentName="PlantBase" Name="ShitBase">
+    <defName>Plant_Shit</defName>
+    <label>excrement</label>
+    <description>Feces accumulate here, eventually becoming edible，This is the fundamental material of alchemy.</description>
+    <statBases>
+      <MaxHitPoints>120</MaxHitPoints>
+      <Nutrition>0.5</Nutrition><!--营养量-->
+	  <BeautyOutdoors>0</BeautyOutdoors>
+    </statBases>
+    <graphicData>
+      <texPath>Things/Crops/Planting_Origin</texPath>
+      <graphicClass>Graphic_Random</graphicClass>
+    </graphicData>
+    <selectable>true</selectable>
+    <pathCost>14</pathCost>
+	<fillPercent>0.20</fillPercent>
+    <ingestible />
+	<neverMultiSelect>false</neverMultiSelect>
+    <plant>
+	  <fertilityMin>0.5</fertilityMin>
+      <fertilitySensitivity>1</fertilitySensitivity>
+      <immatureGraphicPath>Things/Crops/Planting_Origin_Immature</immatureGraphicPath>
+      <dieIfLeafless>true</dieIfLeafless>
+      <maxMeshCount>4</maxMeshCount>
+      <harvestTag>Standard</harvestTag>
+	  <harvestAfterGrowth>0.5</harvestAfterGrowth><!--收获后可以继续收获-->
+      <harvestedThingDef>Original_shit</harvestedThingDef><!--产物-->
+      <harvestYield>4</harvestYield><!--这里是收货量-->
+      <sowTags>
+        <li>Ground</li>
+        <li>Hydroponic</li>
+      </sowTags>
+      <topWindExposure>0.3</topWindExposure>
+      <growDays>5</growDays><!--生长天数-->
+      <visualSizeRange>0.6~1</visualSizeRange>
+      <wildOrder>2</wildOrder>
+      <purpose>Food</purpose>
+    </plant>
+  </ThingDef>
+  
+  <ThingDef ParentName="ShitBase">
+    <defName>Plant_Shit_Decorative</defName>
+    <altitudeLayer>Item</altitudeLayer>
+	<plant>
+	  <maxMeshCount>1</maxMeshCount>
+	  <sowWork>400</sowWork>
+      <sowTags Inherit="false">
+		<li>Decorative</li>
+		<li>DecorativeTree</li>
+      </sowTags>
+	  <growDays>4</growDays>
+	  <growMinGlow>0.01</growMinGlow>
+      <wildClusterRadius>4</wildClusterRadius>
+      <wildClusterWeight>150</wildClusterWeight>
+	  <visualSizeRange>0.6~1.2</visualSizeRange>
+	</plant>
+  </ThingDef>
+	
+  
+</Defs>

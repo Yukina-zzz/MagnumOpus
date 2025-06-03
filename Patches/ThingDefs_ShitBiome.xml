@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<!--寒带添加-->
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/BiomeDef[defName="BorealForest"]/wildPlants</xpath>
+		<value>
+			<Plant_Shit_Decorative>0.08</Plant_Shit_Decorative>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/BiomeDef[defName="Tundra"]/wildPlants</xpath>
+		<value>
+			<Plant_Shit_Decorative>0.05</Plant_Shit_Decorative>
+		</value>
+	</Operation>
+
+	<!--温带添加-->
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/BiomeDef[defName="TemperateForest" or defName="TemperateSwamp"]/wildPlants</xpath>
+		<value>
+			<Plant_Shit_Decorative>0.03</Plant_Shit_Decorative>
+		</value>
+	</Operation>
+	
+	<!--热带添加-->
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/BiomeDef[defName="TropicalRainforest" or defName="TropicalSwamp"]/wildPlants</xpath>
+		<value>
+			<Plant_Shit_Decorative>0.05</Plant_Shit_Decorative>
+		</value>
+	</Operation>
+	
+	<!--干旱添加-->
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/BiomeDef[defName="AridShrubland"]/wildPlants</xpath>
+		<value>
+			<Plant_Shit_Decorative>0.08</Plant_Shit_Decorative>
+		</value>
+	</Operation>
+</Patch>

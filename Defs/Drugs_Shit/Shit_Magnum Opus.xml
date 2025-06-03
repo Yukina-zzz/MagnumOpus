@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ThingDef ParentName="MakeableDrugBase">
+    <defName>Shit_MagnumOpus</defName>
+    <label>Magnum Opus</label>
+    <description>This is the final product of alchemy, this is the ultimate Magnum Opus.</description>
+    <descriptionHyperlinks>
+      <HediffDef>MagnumOpusHigh</HediffDef>
+      <ThingDef>Shit_Nigredo</ThingDef>
+      <ThingDef>Shit_Albedo</ThingDef>
+      <ThingDef>Shit_Citrinitas</ThingDef>
+      <ThingDef>Shit_Rubedo</ThingDef>
+    </descriptionHyperlinks>
+    <tradeTags Inherit="false"><!--去掉交易标签让他不能被贩卖-->
+    </tradeTags>
+    <thingCategories>
+      <li>LMShit</li>
+    </thingCategories>
+    <graphicData>
+      <texPath>Things/Food/MagnumOpus</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <rotatable>false</rotatable>
+    <stackLimit>75</stackLimit>
+    <statBases>
+      <WorkToMake>2000</WorkToMake>
+      <MarketValue>4000</MarketValue>
+      <Mass>0.6</Mass>
+      <Nutrition>2.0</Nutrition>
+      <Beauty>100</Beauty>
+    </statBases>
+    <techLevel>Ultra</techLevel>
+    <ingestible>
+      <joyKind>Chemical</joyKind>
+      <joy>1.0</joy>
+      <drugCategory>Medical</drugCategory>
+      <foodType>Processed</foodType>
+      <baseIngestTicks>80</baseIngestTicks>
+      <ingestSound>RawVegetable_Eat</ingestSound>
+      <ingestHoldOffsetStanding>
+        <northDefault>
+          <offset>(0.15,0,0)</offset>
+        </northDefault>
+      </ingestHoldOffsetStanding>
+      <ingestCommandString>Take {0}</ingestCommandString>
+      <ingestReportString>Taking {0}.</ingestReportString>
+      <useEatingSpeedStat>false</useEatingSpeedStat>
+      <chairSearchRadius>10</chairSearchRadius>
+      <outcomeDoers>
+        <li Class="IngestionOutcomeDoer_GiveHediff">
+          <hediffDef>MagnumOpusHigh</hediffDef>
+          <severity>1</severity>
+        </li>
+        <li Class="IngestionOutcomeDoer_OffsetNeed">
+          <need>Rest</need>
+          <offset>2.0</offset>
+        </li>
+      </outcomeDoers>
+    </ingestible>
+    <recipeMaker>
+      <researchPrerequisite>MagnumRefining</researchPrerequisite>
+      <recipeUsers>
+        <li>BiofuelRefinery</li>
+      </recipeUsers>
+      <soundWorking>Recipe_CookMeal</soundWorking>
+      <displayPriority>1540</displayPriority>
+    </recipeMaker>
+    <costList>
+      <Shit_Nigredo>16</Shit_Nigredo>
+      <Shit_Albedo>8</Shit_Albedo>
+      <Shit_Citrinitas>4</Shit_Citrinitas>
+      <Shit_Rubedo>2</Shit_Rubedo>
+    </costList>
+    <comps>
+      <li Class="MakeHediffAddiction.CompProperties_DrugWithBodyPart">
+        <bodyPartDefs>
+          <li>Heart</li>
+        </bodyPartDefs>
+        <chemical>MagnumOpus</chemical>
+        <addictiveness>1.00</addictiveness>
+        <needLevelOffset>0.9</needLevelOffset>
+        <listOrder>1009</listOrder>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <HediffDef>
+    <defName>MagnumOpusHigh</defName>
+    <hediffClass>Hediff_High</hediffClass>
+    <label>Magnum Opus</label>
+    <labelNoun>Magnum Opus</labelNoun>
+    <description>The power of the Magnum Opus permeates my body, I feel as though I am the
+      embodiment of perfection, it’s as if a deity has descended upon the world.</description>
+    <defaultLabelColor>(0.94,0.86,0)</defaultLabelColor>
+    <scenarioCanAdd>true</scenarioCanAdd>
+    <maxSeverity>1.0</maxSeverity>
+    <isBad>false</isBad>
+    <comps>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>-0.333</severityPerDay>
+        <showHoursToRecover>true</showHoursToRecover>
+      </li>
+    </comps>
+    <stages>
+      <li>
+        <painFactor>0</painFactor><!--疼痛-->
+        <restFallFactorOffset>-2.0</restFallFactorOffset><!--疲劳率-->
+        <hungerRateFactorOffset>-2.0</hungerRateFactorOffset><!--饥饿率-->
+        <statFactors>
+          <MeleeDamageFactor>1.5</MeleeDamageFactor>
+          <AimingDelayFactor>0.5</AimingDelayFactor>
+          <RangedCooldownFactor>0.5</RangedCooldownFactor>
+          <MeleeCooldownFactor>0.5</MeleeCooldownFactor>
+          <IncomingDamageFactor>0.1</IncomingDamageFactor><!--承伤-->
+        </statFactors>
+        <statOffsets>
+          <CarryingCapacity>100</CarryingCapacity>
+          <ArmorRating_Sharp>2.00</ArmorRating_Sharp>
+          <ArmorRating_Blunt>2.00</ArmorRating_Blunt>
+          <ArmorRating_Heat>2.00</ArmorRating_Heat>
+          <ComfyTemperatureMin>-80</ComfyTemperatureMin>
+          <ComfyTemperatureMax>80</ComfyTemperatureMax>
+          <Flammability>-1</Flammability><!--易燃性-->
+          <InjuryHealingFactor>2.0</InjuryHealingFactor><!--愈合能力-->
+          <ImmunityGainSpeed>1.0</ImmunityGainSpeed><!--免疫速度-->
+          <ToxicEnvironmentResistance>1</ToxicEnvironmentResistance><!--毒耐受-->
+          <ToxicResistance>1</ToxicResistance><!--毒抗性-->
+          <WorkSpeedGlobal>1.5</WorkSpeedGlobal><!--全局工作速度-->
+          <VEF_VerbRangeFactor MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">0.40</VEF_VerbRangeFactor> <!--增加远程射程-->
+        </statOffsets>
+        <capMods>
+          <li>
+            <capacity>Metabolism</capacity><!--消化能力-->
+            <offset>1.0</offset>
+          </li>
+          <li>
+            <capacity>Breathing</capacity><!--呼吸能力-->
+            <offset>1.0</offset>
+          </li>
+          <li>
+            <capacity>Talking</capacity><!--语言能力-->
+            <postFactor>2.50</postFactor>
+          </li>
+          <li>
+            <capacity>Sight</capacity><!--视觉能力-->
+            <offset>1.5</offset>
+          </li>
+          <li>
+            <capacity>Hearing</capacity><!--听觉能力-->
+            <offset>1.5</offset>
+          </li>
+          <li>
+            <capacity>Consciousness</capacity><!--意识-->
+            <offset>2.0</offset>
+          </li>
+          <li>
+            <capacity>BloodPumping</capacity><!--血液循环-->
+            <offset>1.0</offset>
+          </li>
+          <li>
+            <capacity>BloodFiltration</capacity><!--血液过滤-->
+            <offset>2.0</offset>
+          </li>
+          <li>
+            <capacity>Moving</capacity><!--移动能力-->
+            <offset>2.0</offset>
+          </li>
+          <li>
+            <capacity>Manipulation</capacity><!--操作能力-->
+            <offset>1.75</offset>
+          </li>
+        </capMods>
+        <makeImmuneTo>
+          <li>Malaria</li>
+          <li>SleepingSickness</li>
+          <li>Plague</li>
+        </makeImmuneTo>
+      </li>
+    </stages>
+  </HediffDef>
+
+  <ChemicalDef>
+    <defName>MagnumOpus</defName>
+    <label>Magnum Opus</label>
+    <addictionHediff>MagnumOpusAddiction</addictionHediff>
+    <canBinge>false</canBinge>
+    <generateAddictionGenes>false</generateAddictionGenes>
+  </ChemicalDef>
+
+  <NeedDef ParentName="DrugAddictionNeedBase">
+    <defName>Chemical_MagnumOpus</defName>
+    <needClass>Need_Chemical</needClass>
+    <label>Magnum Opus</label>
+    <description>After consuming the Magnum Opus, the Magnum Opus will completely transform the
+      host’s physical and mental state, turning them into a perfect being.\nIf the power of the
+      Magnum Opus is lost, the host will struggle to endure the transition from being divine to
+      becoming mortal.\nFurthermore, due to the physical alterations caused by the Magnum Opus, the
+      host will lose control over their body and suffer a mental collapse, leading to death.</description>
+    <listPriority>50</listPriority>
+    <fallPerDay>0.125</fallPerDay>
+    <developmentalStageFilter>Baby, Child, Adult</developmentalStageFilter>
+  </NeedDef>
+
+  <HediffDef ParentName="AddictionBase">
+    <defName>MagnumOpusAddiction</defName>
+    <label>Magnum Opus need</label>
+    <description>The power of the Magnum Opus permeates the entire body, transforming it into a
+      perfect entity, from the physical to the psychological. If one cannot continue to consume the
+      Magnum Opus, they will await death in a state of collapse and paralysis.
+      \nWithout the Magnum Opus, the host’s body will collapse until death, ascending to heaven.</description>
+    <hediffClass>Hediff_Addiction</hediffClass>
+    <causesNeed>Chemical_MagnumOpus</causesNeed>
+    <everCurableByItem>false</everCurableByItem>
+    <cureAllAtOnceIfCuredByItem>true</cureAllAtOnceIfCuredByItem><!--如果出现这个Hediff就可以替换这个身体部位-->
+    <stages>
+      <li>
+      </li>
+      <li>
+        <label>unmet</label>
+        <painOffset>0.4</painOffset>
+        <lifeThreatening>true</lifeThreatening>
+        <deathMtbDays>0.1</deathMtbDays>
+        <mtbDeathDestroysBrain>true</mtbDeathDestroysBrain>
+        <capMods>
+          <li>
+            <capacity>Consciousness</capacity>
+            <setMax>0.1</setMax>
+          </li>
+        </capMods>
+        <mentalStateGivers>
+          <li>
+            <mentalState>Berserk</mentalState>
+            <mtbDays>0.4</mtbDays>
+          </li>
+        </mentalStateGivers>
+      </li>
+    </stages>
+  </HediffDef>
+
+  <ThoughtDef>
+    <defName>AteMagnumOpus</defName>
+    <showBubble>true</showBubble>
+    <icon>Things/Food/Origin/Origin_B</icon>
+    <workerClass>ThoughtWorker_Hediff</workerClass>
+    <hediff>MagnumOpusHigh</hediff>
+    <validWhileDespawned>true</validWhileDespawned>
+    <developmentalStageFilter>Baby, Child, Adult</developmentalStageFilter>
+    <stages>
+      <li>
+        <label>Ate Magnum Opus</label>
+        <description>The power of the Magnum Opus is truly captivating, infiltrating every part of
+          my body, making me feel like a deity. I truly do not want to lose this power, I don’t want
+          to! I don’t want to! No! No! Ahhhhhhh!!!</description>
+        <baseMoodEffect>-60</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+</Defs>

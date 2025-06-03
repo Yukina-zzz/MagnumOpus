@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: Albedo plowed soil -->
+  <Albedo_PlowedSoil.label>白化耕地</Albedo_PlowedSoil.label>
+  <!-- EN: Added Albedo as fertilizer to the farmland. This area of land is paintable. -->
+  <Albedo_PlowedSoil.description>添加白化之屎作為肥料的耕地。這塊土地的可以粉刷的。</Albedo_PlowedSoil.description>
+  <!-- EN: dirt -->
+  <Albedo_PlowedSoil.tools.dirt.label>汙垢</Albedo_PlowedSoil.tools.dirt.label>
+  
+  <!-- EN: Citrinitas plowed soil -->
+  <Citrinitas_PlowedSoil.label>黃化耕地</Citrinitas_PlowedSoil.label>
+  <!-- EN: Added Citrinitas as fertilizer to the farmland. This area of land is paintable. -->
+  <Citrinitas_PlowedSoil.description>添加黃化之屎作為肥料的耕地。這塊土地的可以粉刷的。</Citrinitas_PlowedSoil.description>
+  <!-- EN: dirt -->
+  <Citrinitas_PlowedSoil.tools.dirt.label>塵土</Citrinitas_PlowedSoil.tools.dirt.label>
+  
+  <!-- EN: Nigredo plowed soil -->
+  <Nigredo_PlowedSoil.label>黑化耕地</Nigredo_PlowedSoil.label>
+  <!-- EN: Added Nigredo as fertilizer to the farmland. This area of land is paintable. -->
+  <Nigredo_PlowedSoil.description>添加黑化之屎作為肥料的耕地。這塊土地的可以粉刷的。</Nigredo_PlowedSoil.description>
+  <!-- EN: dirt -->
+  <Nigredo_PlowedSoil.tools.dirt.label>塵土</Nigredo_PlowedSoil.tools.dirt.label>
+  
+  <!-- EN: Rubedo plowed soil -->
+  <Rubedo_PlowedSoil.label>紅化耕地</Rubedo_PlowedSoil.label>
+  <!-- EN: Added Rubedo as fertilizer to the farmland. This area of land is paintable. -->
+  <Rubedo_PlowedSoil.description>添加紅化之屎作為肥料的耕地。這塊土地的可以粉刷的。</Rubedo_PlowedSoil.description>
+  <!-- EN: dirt -->
+  <Rubedo_PlowedSoil.tools.dirt.label>塵土</Rubedo_PlowedSoil.tools.dirt.label>
+  
+  <!-- EN: plowed soil -->
+  <Shit_PlowedSoil.label>耕地</Shit_PlowedSoil.label>
+  <!-- EN: Tilled land enriched with fertilizer. This plot of land is paintable. -->
+  <Shit_PlowedSoil.description>添加肥料並細細耕耘的土地。這塊土地的可以粉刷的。</Shit_PlowedSoil.description>
+  <!-- EN: dirt -->
+  <Shit_PlowedSoil.tools.dirt.label>塵土</Shit_PlowedSoil.tools.dirt.label>
+</LanguageData>

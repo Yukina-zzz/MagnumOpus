@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+	<name>MoManaCha's Magnum Opus</name>
+	<author>MoManaCha</author>
+	<packageId>MoManaCha.MagnumOpus</packageId>
+	<supportedVersions>
+		<li>1.4</li>
+		<li>1.5</li>
+	</supportedVersions>
+	<description>
+	这将是超越一切的伟大之作，炼金术最终的贤者之石
+	</description>
+</ModMetaData>

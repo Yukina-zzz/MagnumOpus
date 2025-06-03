@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: Magnum Opus -->
+  <MagnumRefining.label>伟大之作</MagnumRefining.label>
+  <!-- EN: That which is below is like that which is above and that which is above is like that which is below to do ye miracles of one only thing.That which I have said of ye operation of ye Sun is accomplished ended. -->
+  <MagnumRefining.description>下如同上，上如同下；依此成全太一的奇迹。这就是我所说的伟大之作。</MagnumRefining.description>
+  <!-- EN:
+    <li>subject->Magnum Opus</li>
+    <li>subject_story->has finally completed the research of the Magnum Opus</li>
+    <li>subject_story->has finally accomplished a great miracle</li>
+    <li>subject_story->is finally reaching the culmination of alchemy</li>
+    <li>subject_gerund->synthesizing Magnum Opus</li>
+  -->
+  <MagnumRefining.generalRules.rulesStrings>
+    <li>subject->伟大之作</li>
+    <li>subject_story->完成了伟大之作的研究</li>
+    <li>subject_story->终于完成了伟大之作的奇迹</li>
+    <li>subject_story->终于要达到炼金术的终结了</li>
+    <li>subject_gerund->合成 伟大之作</li>
+  </MagnumRefining.generalRules.rulesStrings>
+  
+  <!-- EN: The Refining of Shit -->
+  <ShitRefining.label>屎的精炼</ShitRefining.label>
+  <!-- EN: With the wisdom of alchemy, I will create great wonders. All things in the heavens and the earth, in the universe, will be discovered, studied, pondered upon, and created by me, ultimately leading to the completion of the Magnum Opus. -->
+  <ShitRefining.description>我将使用炼金术的学识创造伟大奇迹，天地宇宙万物都将被我发现，被我研究，被我思考，被我创造，最终将会完成伟大之作。</ShitRefining.description>
+  <!-- EN:
+    <li>subject->The Refining of Shit</li>
+    <li>subject_story->has learned the origin of alchemy</li>
+    <li>subject_story->has learned the culmination of alchemy</li>
+    <li>subject_story->has learned how to begin the creation of miracles</li>
+    <li>subject_gerund->synthesizing Shit</li>
+  -->
+  <ShitRefining.generalRules.rulesStrings>
+    <li>subject->屎的精炼</li>
+    <li>subject_story->学会了炼金术的起源</li>
+    <li>subject_story->学会了炼金术的终结</li>
+    <li>subject_story->学会了如何开始制作奇迹</li>
+    <li>subject_gerund->合成 屎</li>
+  </ShitRefining.generalRules.rulesStrings>
+  
+</LanguageData>

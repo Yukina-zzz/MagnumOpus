@@ -1,0 +1,140 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<TerrainDef Name="Shit_PlowedSoilBase">
+		<defName>Shit_PlowedSoil</defName>
+		<label>plowed soil</label>
+		<description>Tilled land enriched with fertilizer. This plot of land is paintable.</description>
+		<texturePath>Terrain/Shit_PlowedSoil</texturePath>
+		<edgeType>Hard</edgeType>
+		<isPaintable>true</isPaintable><!-- 可以变色-->
+		<renderPrecedence>350</renderPrecedence>
+		<layerable>true</layerable>
+		<pathCost>6</pathCost>
+		<filthAcceptanceMask>
+			<li>Unnatural</li>
+		</filthAcceptanceMask>
+		<designationCategory>Floors</designationCategory>
+		<constructEffect>ConstructDirt</constructEffect>
+		<resourcesFractionWhenDeconstructed>0</resourcesFractionWhenDeconstructed>
+		<statBases>
+			<MarketValue>1</MarketValue>
+			<Beauty>-2</Beauty>
+			<Cleanliness>-2</Cleanliness>
+			<WorkToBuild>400</WorkToBuild>
+			<FilthMultiplier>0.05</FilthMultiplier><!-- 易污乘数 -->
+		</statBases>
+		<costList>
+            <Original_shit>4</Original_shit>
+		</costList>
+		<scatterType>Rocky</scatterType>
+		<affordances>
+			<li>Light</li>
+			<li>Medium</li>
+			<li>Heavy</li>
+			<li>GrowSoil</li>
+			<li>Diggable</li>
+			<li MayRequire="VanillaExpanded.VFEArchitect">VFEArch_Soil</li>
+			<li MayRequire="VanillaExpanded.VFEArchitect">VFEArch_Foundation</li>
+		</affordances>
+		<generatedFilth>Filth_Dirt</generatedFilth>
+		<fertility>1.25</fertility>
+		<takeFootprints>True</takeFootprints>
+		<tools>
+			<li>
+				<label>dirt</label>
+				<capacities>
+					<li>KickMaterialInEyes</li>
+				</capacities>
+				<hediff>DirtInEyes</hediff>
+				<cooldownTime>1.5</cooldownTime>
+			</li>
+		</tools>
+		<tags>
+		  <li MayRequire="Ludeon.RimWorld.Royalty">FineFloor</li>
+		  <li MayRequire="kentington.saveourship2">Ship</li>
+		</tags>
+	</TerrainDef>
+	
+	<TerrainDef ParentName="Shit_PlowedSoilBase">
+		<defName>Nigredo_PlowedSoil</defName>
+		<label>Nigredo plowed soil</label>
+		<description>Added Nigredo as fertilizer to the farmland. This area of land is paintable.</description>
+		<texturePath>Terrain/Nigredo_PlowedSoil</texturePath>
+		<pathCost>4</pathCost>
+		<fertility>1.50</fertility>
+		<costList Inherit="false">
+            <Shit_Nigredo>4</Shit_Nigredo>
+		</costList>
+		<researchPrerequisites>
+		  <li>ShitRefining</li>
+		</researchPrerequisites>
+	</TerrainDef>
+	
+	<TerrainDef ParentName="Shit_PlowedSoilBase">
+		<defName>Albedo_PlowedSoil</defName>
+		<label>Albedo plowed soil</label>
+		<description>Added Albedo as fertilizer to the farmland. This area of land is paintable.</description>
+		<texturePath>Terrain/Albedo_PlowedSoil</texturePath>
+		<pathCost>3</pathCost>
+		<statBases>
+			<Beauty>0</Beauty>
+			<CleaningTimeFactor>0.7</CleaningTimeFactor><!-- 清扫时间乘数 -->
+			<Cleanliness>0.1</Cleanliness><!-- 清洁度 -->
+			<WorkToBuild>350</WorkToBuild>
+		</statBases>
+		<fertility>2</fertility>
+		<costList Inherit="false">
+            <Shit_Albedo>4</Shit_Albedo>
+		</costList>
+		<researchPrerequisites>
+		  <li>ShitRefining</li>
+		</researchPrerequisites>
+	</TerrainDef>
+	
+	<TerrainDef ParentName="Shit_PlowedSoilBase">
+		<defName>Citrinitas_PlowedSoil</defName>
+		<label>Citrinitas plowed soil</label>
+		<description>Added Citrinitas as fertilizer to the farmland. This area of land is paintable.</description>
+		<texturePath>Terrain/Citrinitas_PlowedSoil</texturePath>
+		<pathCost>2</pathCost>
+		<statBases>
+			<MarketValue>2</MarketValue>
+			<Beauty>1</Beauty>
+			<Cleanliness>0.6</Cleanliness>
+			<CleaningTimeFactor>0.6</CleaningTimeFactor><!-- 清扫时间乘数 -->
+			<WorkToBuild>300</WorkToBuild>
+		</statBases>
+		<fertility>3</fertility>
+		<costList Inherit="false">
+            <Shit_Citrinitas>4</Shit_Citrinitas>
+		</costList>
+		<researchPrerequisites>
+		  <li>ShitRefining</li>
+		</researchPrerequisites>
+	</TerrainDef>
+	
+	<TerrainDef ParentName="Shit_PlowedSoilBase">
+		<defName>Rubedo_PlowedSoil</defName>
+		<label>Rubedo plowed soil</label>
+		<description>Added Rubedo as fertilizer to the farmland. This area of land is paintable.</description>
+		<texturePath>Terrain/Rubedo_PlowedSoil</texturePath>
+		<pathCost>1</pathCost>
+		<statBases>
+			<MarketValue>4</MarketValue>
+			<Beauty>2</Beauty>
+			<Cleanliness>1</Cleanliness>
+			<CleaningTimeFactor>0.4</CleaningTimeFactor><!-- 清扫时间乘数 -->
+			<WorkToBuild>250</WorkToBuild>
+		</statBases>
+		<fertility>5</fertility>
+		<costList Inherit="false">
+            <Shit_Rubedo>4</Shit_Rubedo>
+		</costList>
+		<researchPrerequisites>
+		  <li>ShitRefining</li>
+		</researchPrerequisites>
+	</TerrainDef>
+
+
+</Defs>

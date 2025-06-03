@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: Citrinitas -->
+  <Shit_Citrinitas.label>黄化的屎</Shit_Citrinitas.label>
+  <!-- EN: Citrinitas is the product obtained after deep research into Albedo, it seems that something has entered my mental space, enhancing my mental and physical capabilities. -->
+  <Shit_Citrinitas.description>黄化的屎 在对白化的屎深入研究后获得的产物，貌似有什么东西进入了我的精神空间在强化我的精神和肉体能力。</Shit_Citrinitas.description>
+  <!-- EN: Take {0} -->
+  <Shit_Citrinitas.ingestible.ingestCommandString>吃 {0}</Shit_Citrinitas.ingestible.ingestCommandString>
+  <!-- EN: Taking {0}. -->
+  <Shit_Citrinitas.ingestible.ingestReportString>吃 {0}中</Shit_Citrinitas.ingestible.ingestReportString>
+  
+</LanguageData>

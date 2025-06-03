@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: excrement -->
+  <Plant_Shit.label>大便</Plant_Shit.label>
+  <!-- EN: Feces accumulate here, eventually becoming edible，This is the fundamental material of alchemy. -->
+  <Plant_Shit.description>屎在这里堆积，最终将变得可以食用，这是炼金术的基础材料。</Plant_Shit.description>
+  
+  <!-- EN: excrement -->
+  <Plant_Shit_Decorative.label>大便</Plant_Shit_Decorative.label>
+  <!-- EN: Feces accumulate here, eventually becoming edible，This is the fundamental material of alchemy. -->
+  <Plant_Shit_Decorative.description>屎在这里堆积，最终将变得可以食用，这是炼金术的基础材料。</Plant_Shit_Decorative.description>
+  
+</LanguageData>

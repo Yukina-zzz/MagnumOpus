@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: Albedo -->
+  <Shit_Albedo.label>白化之屎</Shit_Albedo.label>
+  <!-- EN: Albedo is the product created after in-depth study of alchemy, but the book says everything comes with a price, I’m not sure what that means. -->
+  <Shit_Albedo.description>白化之屎是深入研究炼金术后创造的产物，但书里说一切都是有代价的，但我并不确定到底有什么含义。</Shit_Albedo.description>
+  <!-- EN: Take {0} -->
+  <Shit_Albedo.ingestible.ingestCommandString>吃 {0}</Shit_Albedo.ingestible.ingestCommandString>
+  <!-- EN: Taking {0}. -->
+  <Shit_Albedo.ingestible.ingestReportString>吃 {0}中</Shit_Albedo.ingestible.ingestReportString>
+  
+</LanguageData>

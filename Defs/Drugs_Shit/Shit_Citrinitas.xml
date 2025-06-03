@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <ThingDef ParentName="MakeableDrugBase">
+    <defName>Shit_Citrinitas</defName>
+    <label>Citrinitas</label>
+    <description>Citrinitas is the product obtained after deep research into Albedo, it seems that something has entered my mental space, enhancing my mental and physical capabilities.</description>
+    <descriptionHyperlinks>
+      <HediffDef>CitrinitasHigh</HediffDef>
+      <ThingDef>Shit_Albedo</ThingDef>
+    </descriptionHyperlinks>
+    <thingCategories>
+      <li>LMShit</li>
+    </thingCategories>
+    <graphicData>
+      <texPath>Things/Food/Citrinitas</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <rotatable>false</rotatable>
+	<stackLimit>75</stackLimit>
+    <statBases>
+      <WorkToMake>400</WorkToMake>
+      <MarketValue>400</MarketValue>
+      <Mass>0.4</Mass>
+	  <Nutrition>1.4</Nutrition>
+	  <Beauty>30</Beauty>
+    </statBases>
+	<techLevel>Industrial</techLevel>
+    <ingestible>
+      <joyKind>Chemical</joyKind>
+      <joy>0.60</joy>
+      <drugCategory>Medical</drugCategory>
+      <foodType>Meal</foodType>
+      <baseIngestTicks>80</baseIngestTicks>
+      <ingestSound>RawVegetable_Eat</ingestSound>
+      <ingestHoldOffsetStanding>
+        <northDefault>
+          <offset>(0.15,0,0)</offset>
+        </northDefault>
+      </ingestHoldOffsetStanding>
+      <ingestCommandString>Take {0}</ingestCommandString>
+      <ingestReportString>Taking {0}.</ingestReportString>
+      <useEatingSpeedStat>false</useEatingSpeedStat>
+      <chairSearchRadius>10</chairSearchRadius>
+      <outcomeDoers>
+        <li Class="IngestionOutcomeDoer_GiveHediff">
+          <hediffDef>CitrinitasHigh</hediffDef>
+          <severity>1</severity>
+        </li>
+        <li Class="IngestionOutcomeDoer_OffsetNeed">
+          <need>Rest</need>
+          <offset>0.8</offset>
+        </li>
+      </outcomeDoers>
+    </ingestible>
+    <recipeMaker>
+      <researchPrerequisite>ShitRefining</researchPrerequisite>
+      <recipeUsers>
+		<li>TableSculpting</li>
+		<li>TableMachining</li>
+      </recipeUsers>
+      <soundWorking>Recipe_CookMeal</soundWorking>
+      <displayPriority>1520</displayPriority>
+    </recipeMaker>
+    <costList>
+      <Gold>2</Gold>
+      <Shit_Albedo>4</Shit_Albedo>
+    </costList>
+   <comps>
+      <li Class="CompProperties_Drug">
+        <listOrder>400</listOrder>
+        <overdoseSeverityOffset>0.08~0.14</overdoseSeverityOffset>
+      </li>
+    </comps>
+  </ThingDef>
+	
+  <HediffDef>
+    <defName>CitrinitasHigh</defName>
+    <hediffClass>Hediff_High</hediffClass>
+    <label>Citrinitas</label>
+    <labelNoun>Citrinitas</labelNoun>
+    <description>My body is filled with the power of Citrinitas!!!</description>
+    <defaultLabelColor>(1.00,1.00,1.00)</defaultLabelColor>
+    <scenarioCanAdd>true</scenarioCanAdd>
+    <maxSeverity>1.0</maxSeverity>
+    <isBad>false</isBad>
+    <comps>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>-0.333</severityPerDay>
+        <showHoursToRecover>true</showHoursToRecover>
+      </li>
+    </comps>
+      <stages>
+        <li>
+          <painFactor>0.5</painFactor><!--疼痛-->
+		  <restFallFactorOffset>-0.5</restFallFactorOffset><!--疲劳率-->
+		  <statFactors>
+			<IncomingDamageFactor>0.6</IncomingDamageFactor><!--承伤-->
+		  </statFactors>
+		  <statOffsets>
+			<CarryingCapacity>40</CarryingCapacity>
+			<ArmorRating_Sharp>0.60</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.60</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.60</ArmorRating_Heat>
+            <ComfyTemperatureMin>-20</ComfyTemperatureMin>
+            <ComfyTemperatureMax>20</ComfyTemperatureMax>
+			<Flammability>-0.5</Flammability><!--易燃性-->
+			<InjuryHealingFactor>0.6</InjuryHealingFactor><!--愈合能力-->
+			<ToxicEnvironmentResistance>1</ToxicEnvironmentResistance><!--毒耐受-->
+			<ToxicResistance>1</ToxicResistance><!--毒抗性-->
+			<WorkSpeedGlobal>0.5</WorkSpeedGlobal><!--全局工作速度-->
+		  </statOffsets>
+          <capMods>
+            <li>
+              <capacity>Breathing</capacity><!--呼吸能力-->
+              <offset>0.20</offset>
+            </li>
+            <li>
+              <capacity>Talking</capacity><!--语言能力-->
+              <postFactor>1.30</postFactor>
+            </li>
+            <li>
+              <capacity>Sight</capacity><!--视觉能力-->
+              <offset>0.20</offset>
+            </li>
+            <li>
+              <capacity>Consciousness</capacity><!--意识-->
+              <offset>0.4</offset>
+            </li> 
+            <li>
+              <capacity>BloodPumping</capacity><!--血液循环-->
+              <offset>0.3</offset>
+            </li>
+            <li>
+              <capacity>BloodFiltration</capacity><!--血液过滤-->
+              <offset>0.70</offset>
+            </li>
+            <li>
+              <capacity>Moving</capacity><!--移动能力-->
+              <offset>0.4</offset>
+            </li>
+            <li>
+              <capacity>Manipulation</capacity><!--操作能力-->
+              <offset>0.4</offset>
+            </li> 
+          </capMods>
+          <makeImmuneTo>
+            <li>Malaria</li>
+            <li>SleepingSickness</li>
+            <li>Plague</li>
+          </makeImmuneTo>
+		</li>
+      </stages>
+  </HediffDef>
+  
+  <ThoughtDef>
+    <defName>AteCitrinitas</defName>
+    <showBubble>true</showBubble>
+    <icon>Things/Food/Origin/Origin_B</icon>
+    <workerClass>ThoughtWorker_Hediff</workerClass>
+    <hediff>CitrinitasHigh</hediff>
+    <validWhileDespawned>true</validWhileDespawned>
+    <developmentalStageFilter>Baby, Child, Adult</developmentalStageFilter>
+    <stages>
+      <li>
+        <label>Ate Citrinitas</label>
+        <description>I feel Citrinitas permeating every inch of my skin, causing me to feel somewhat mentally disturbed.</description>
+        <baseMoodEffect>-30</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+</Defs>

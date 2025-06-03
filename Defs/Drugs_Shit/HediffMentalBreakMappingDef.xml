@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <HediffMentalBreakMappingSetDef>
+    <defName>DrugMentalBreakMappings</defName>
+    <mappings>
+      <li>
+        <!-- 触发的 Hediff  -->
+        <hediff>MagnumOpusHigh</hediff>
+        <!-- …触发崩溃时强制进入的精神状态 -->
+        <mentalState>Berserk</mentalState>
+        <!-- 可选：进入崩溃后再额外添加的新 Hediff -->
+        <onBreakDoers>
+          <li Class="IngestionOutcomeDoer_GiveHediff">
+            <hediffDef>Regeneration</hediffDef>
+          </li>
+          <!-- <li Class="IngestionOutcomeDoer_GiveHediff">
+            <hediffDef>AlbedoHigh</hediffDef>
+            <severity>1.2</severity>
+            <chance>0.7</chance>
+            <reason>精神崩溃诱发</reason>
+            <targetBodyPart>Brain</targetBodyPart>
+          </li> -->
+        </onBreakDoers>
+      </li>
+    </mappings>
+  </HediffMentalBreakMappingSetDef>
+
+</Defs>

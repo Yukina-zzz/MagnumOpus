@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<RecipeDef>
+    <defName>Make_Original_shit</defName>
+    <label>make The Origin of Shit</label>
+    <description>Craft The Origin of Shit.</description>
+    <jobString>Making The Origin of Shit.</jobString>
+	<workAmount>300</workAmount>
+    <workSpeedStat>CookSpeed</workSpeedStat>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_CookMeal</soundWorking>
+    <allowMixingIngredients>true</allowMixingIngredients>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>FecalSludge</li>
+          </thingDefs>
+        </filter>
+        <count>6</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>FecalSludge</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Original_shit>1</Original_shit>
+    </products>
+	<recipeUsers>
+		<li>FueledStove</li>
+		<li>ElectricStove</li>
+	</recipeUsers>
+	<workSkill>Cooking</workSkill>
+	<researchPrerequisite>ShitRefining</researchPrerequisite>
+	</RecipeDef>
+	
+	<RecipeDef>
+    <defName>Make_Original_shitx4</defName>
+    <label>make The Origin of Shit x4</label>
+    <description>Craft The Origin of Shit x4.</description>
+    <jobString>Making The Origin of Shit.</jobString>
+	<workAmount>1000</workAmount>
+    <workSpeedStat>CookSpeed</workSpeedStat>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_CookMeal</soundWorking>
+    <allowMixingIngredients>true</allowMixingIngredients>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>FecalSludge</li>
+          </thingDefs>
+        </filter>
+        <count>24</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>FecalSludge</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Original_shit>4</Original_shit>
+    </products>
+	<recipeUsers>
+		<li>FueledStove</li>
+		<li>ElectricStove</li>
+	</recipeUsers>
+	<workSkill>Cooking</workSkill>
+	<researchPrerequisite>ShitRefining</researchPrerequisite>
+	</RecipeDef>
+</Defs>

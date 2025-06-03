@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <ThingDef ParentName="MakeableDrugBase">
+    <defName>Shit_Rubedo</defName>
+    <label>Rubedo</label>
+    <description>Rubedo is the product obtained from research within the mental space. Although Luciferium is required as a production material, an excellent alchemist would naturally utilize superior techniques to neutralize it.</description>
+    <descriptionHyperlinks>
+      <HediffDef>RubedoHigh</HediffDef>
+      <ThingDef>Shit_Citrinitas</ThingDef>
+    </descriptionHyperlinks>
+	<tradeTags Inherit="false"><!--去掉交易标签让他不能被贩卖-->
+	</tradeTags>
+    <thingCategories>
+      <li>LMShit</li>
+    </thingCategories>
+    <graphicData>
+      <texPath>Things/Food/Rubedo</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <rotatable>false</rotatable>
+	<stackLimit>75</stackLimit>
+    <statBases>
+      <WorkToMake>1000</WorkToMake>
+      <MarketValue>1000</MarketValue>
+      <Mass>0.5</Mass>
+	  <Nutrition>1.6</Nutrition>
+	  <Beauty>40</Beauty>
+    </statBases>
+	<techLevel>Ultra</techLevel>
+    <ingestible>
+      <joyKind>Chemical</joyKind>
+      <joy>0.80</joy>
+      <drugCategory>Medical</drugCategory>
+      <foodType>Processed</foodType>
+      <baseIngestTicks>80</baseIngestTicks>
+      <ingestSound>RawVegetable_Eat</ingestSound>
+      <ingestHoldOffsetStanding>
+        <northDefault>
+          <offset>(0.15,0,0)</offset>
+        </northDefault>
+      </ingestHoldOffsetStanding>
+      <ingestCommandString>Take {0}</ingestCommandString>
+      <ingestReportString>Taking {0}.</ingestReportString>
+      <useEatingSpeedStat>false</useEatingSpeedStat>
+      <chairSearchRadius>10</chairSearchRadius>
+      <outcomeDoers>
+        <li Class="IngestionOutcomeDoer_GiveHediff">
+          <hediffDef>RubedoHigh</hediffDef>
+          <severity>1</severity>
+        </li>
+        <li Class="IngestionOutcomeDoer_OffsetNeed">
+          <need>Rest</need>
+          <offset>1.0</offset>
+        </li>
+      </outcomeDoers>
+    </ingestible>
+    <recipeMaker>
+      <researchPrerequisite>ShitRefining</researchPrerequisite>
+      <recipeUsers>
+		<li>TableMachining</li>
+      </recipeUsers>
+      <soundWorking>Recipe_CookMeal</soundWorking>
+      <displayPriority>1530</displayPriority>
+    </recipeMaker>
+    <costList>
+      <Luciferium>2</Luciferium>
+      <Shit_Citrinitas>4</Shit_Citrinitas>
+    </costList>
+   <comps>
+      <li Class="CompProperties_Drug">
+        <listOrder>400</listOrder>
+        <overdoseSeverityOffset>0.08~0.14</overdoseSeverityOffset>
+      </li>
+    </comps>
+  </ThingDef>
+	
+  <HediffDef>
+    <defName>RubedoHigh</defName>
+    <hediffClass>Hediff_High</hediffClass>
+    <label>Rubedo</label>
+    <labelNoun>Rubedo</labelNoun>
+    <description>My body is filled with the power of Rubedo!!!</description>
+    <defaultLabelColor>(1.00,0,0)</defaultLabelColor>
+    <scenarioCanAdd>true</scenarioCanAdd>
+    <maxSeverity>1.0</maxSeverity>
+    <isBad>false</isBad>
+    <comps>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>-0.333</severityPerDay>
+        <showHoursToRecover>true</showHoursToRecover>
+      </li>
+    </comps>
+      <stages>
+        <li>
+          <painFactor>0.1</painFactor><!--疼痛-->
+		  <restFallFactorOffset>-1.0</restFallFactorOffset><!--疲劳率-->
+		  <hungerRateFactorOffset>-1.0</hungerRateFactorOffset><!--饥饿率-->
+		  <statFactors>
+			<IncomingDamageFactor>0.3</IncomingDamageFactor><!--承伤-->
+		  </statFactors>
+		  <statOffsets>
+			<CarryingCapacity>50</CarryingCapacity>
+			<ArmorRating_Sharp>1.00</ArmorRating_Sharp>
+			<ArmorRating_Blunt>1.00</ArmorRating_Blunt>
+			<ArmorRating_Heat>1.00</ArmorRating_Heat>
+            <ComfyTemperatureMin>-40</ComfyTemperatureMin>
+            <ComfyTemperatureMax>40</ComfyTemperatureMax>
+			<Flammability>-1.0</Flammability><!--易燃性-->
+			<InjuryHealingFactor>1.25</InjuryHealingFactor><!--愈合能力-->
+			<ImmunityGainSpeed>0.40</ImmunityGainSpeed><!--免疫速度-->
+			<ToxicEnvironmentResistance>1</ToxicEnvironmentResistance><!--毒耐受-->
+			<ToxicResistance>1</ToxicResistance><!--毒抗性-->
+			<WorkSpeedGlobal>1</WorkSpeedGlobal><!--全局工作速度-->
+			<VEF_VerbRangeFactor MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">0.20</VEF_VerbRangeFactor> <!--增加远程射程-->
+		  </statOffsets>
+          <capMods>
+             <li>
+              <capacity>Metabolism</capacity><!--消化能力-->
+              <offset>0.40</offset>
+            </li>
+            <li>
+              <capacity>Breathing</capacity><!--呼吸能力-->
+              <offset>0.50</offset>
+            </li>
+            <li>
+              <capacity>Talking</capacity><!--语言能力-->
+              <postFactor>1.75</postFactor>
+            </li>
+            <li>
+              <capacity>Sight</capacity><!--视觉能力-->
+              <offset>0.50</offset>
+            </li>
+            <li>
+              <capacity>Hearing</capacity><!--听觉能力-->
+              <offset>0.50</offset>
+            </li>
+            <li>
+              <capacity>Consciousness</capacity><!--意识-->
+              <offset>0.75</offset>
+            </li> 
+            <li>
+              <capacity>BloodPumping</capacity><!--血液循环-->
+              <offset>0.6</offset>
+            </li>
+            <li>
+              <capacity>BloodFiltration</capacity><!--血液过滤-->
+              <offset>1.00</offset>
+            </li>
+            <li>
+              <capacity>Moving</capacity><!--移动能力-->
+              <offset>0.8</offset>
+            </li>
+            <li>
+              <capacity>Manipulation</capacity><!--操作能力-->
+              <offset>0.75</offset>
+            </li> 
+          </capMods>
+          <makeImmuneTo>
+            <li>Malaria</li>
+            <li>SleepingSickness</li>
+            <li>Plague</li>
+          </makeImmuneTo>
+		</li>
+      </stages>
+  </HediffDef>
+  
+  <ThoughtDef>
+    <defName>AteRubedo</defName>
+    <showBubble>true</showBubble>
+    <icon>Things/Food/Origin/Origin_B</icon>
+    <workerClass>ThoughtWorker_Hediff</workerClass>
+    <hediff>RubedoHigh</hediff>
+    <validWhileDespawned>true</validWhileDespawned>
+    <developmentalStageFilter>Baby, Child, Adult</developmentalStageFilter>
+    <stages>
+      <li>
+        <label>Ate Rubedo</label>
+        <description>The power of Rubedo is immense, but I feel as though every inch of my skin, organs, and blood have been invaded. Is this the price?</description>
+        <baseMoodEffect>-40</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+</Defs>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <!--RecipeDef ParentName="SurgeryInstallBodyPartProstheticBase">
+    <defName>InstallHeart_S</defName>
+    <label>install heart</label>
+    <description>Install a heart.</description>
+    <descriptionHyperlinks>
+      <ThingDef>Heart</ThingDef>
+    </descriptionHyperlinks>
+    <jobString>Installing heart.</jobString>
+    <deathOnFailedSurgeryChance>0.25</deathOnFailedSurgeryChance>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Heart</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Heart</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Heart</li>
+    </appliedOnFixedBodyParts>
+  </RecipeDef>-->
+  
+</Defs>

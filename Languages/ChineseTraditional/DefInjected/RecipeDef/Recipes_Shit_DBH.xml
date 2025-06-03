@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: make The Origin of Shit -->
+  <Make_Original_shit.label>烹饪屎之本源</Make_Original_shit.label>
+  <!-- EN: Craft The Origin of Shit. -->
+  <Make_Original_shit.description>烹饪屎之本源。</Make_Original_shit.description>
+  <!-- EN: Making The Origin of Shit. -->
+  <Make_Original_shit.jobString>正在烹饪屎之本源。</Make_Original_shit.jobString>
+  
+  <!-- EN: make The Origin of Shit x4 -->
+  <Make_Original_shitx4.label>烹饪屎之本源 x4</Make_Original_shitx4.label>
+  <!-- EN: Craft The Origin of Shit x4. -->
+  <Make_Original_shitx4.description>烹饪屎之本源 x4。</Make_Original_shitx4.description>
+  <!-- EN: Making The Origin of Shit. -->
+  <Make_Original_shitx4.jobString>正在烹饪屎之本源。</Make_Original_shitx4.jobString>
+  
+</LanguageData>

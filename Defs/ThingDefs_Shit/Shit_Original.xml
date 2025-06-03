@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <ThingDef Abstract="True" Name="OriginalShitBase">
+    <thingClass>ThingWithComps</thingClass>
+    <category>Item</category>
+    <drawerType>MapMeshOnly</drawerType>
+    <resourceReadoutPriority>Middle</resourceReadoutPriority>
+    <useHitPoints>true</useHitPoints>
+    <selectable>true</selectable>
+    <altitudeLayer>Item</altitudeLayer>
+    <stackLimit>75</stackLimit>
+    <statBases>
+      <MaxHitPoints>75</MaxHitPoints>
+      <Flammability>1.0</Flammability>
+      <DeteriorationRate>6</DeteriorationRate>
+      <Mass>0.4</Mass>
+	  <Beauty>-1</Beauty>
+    </statBases>
+    <ingestible>
+      <maxNumToIngestAtOnce>2</maxNumToIngestAtOnce>
+      <defaultNumToIngestAtOnce>2</defaultNumToIngestAtOnce>
+	  <chairSearchRadius>25</chairSearchRadius>
+    </ingestible>
+    <comps>
+      <li Class="CompProperties_Forbiddable"/>
+    </comps>
+    <alwaysHaulable>true</alwaysHaulable>
+    <drawGUIOverlay>true</drawGUIOverlay>
+    <rotatable>false</rotatable>
+    <pathCost>14</pathCost>
+    <allowedArchonexusCount>40</allowedArchonexusCount>
+  </ThingDef>
+  
+  	<ThingCategoryDef>
+		<defName>LMShit</defName>
+		<label>Refining of feces</label>
+		<parent>Foods</parent>
+		<iconPath>Things/Food/Origin/Origin_B</iconPath>
+	</ThingCategoryDef>
+	
+  <ThingDef ParentName="OriginalShitBase">
+    <defName>Original_shit</defName>
+    <label>The Origin of Shit</label>
+    <description>A foul smelling pile of feces。</description>
+    <thingCategories>
+      <li>LMShit</li>
+    </thingCategories>
+	<graphicData>
+		<texPath>Things/Food/Origin</texPath>
+		<graphicClass>Graphic_StackCount</graphicClass>
+	</graphicData>
+    <socialPropernessMatters>true</socialPropernessMatters>
+	<statBases>
+      <MarketValue>1.5</MarketValue>
+      <Mass>0.4</Mass>
+      <Nutrition>0.5</Nutrition>
+      <FoodPoisonChanceFixedHuman>0.04</FoodPoisonChanceFixedHuman>
+    </statBases>
+    <ingestible>
+      <foodType>Meal, Meat</foodType>
+      <preferability>RawBad</preferability>
+      <tasteThought>AteOriginalShit</tasteThought>
+      <optimalityOffsetHumanlikes>30</optimalityOffsetHumanlikes>
+      <optimalityOffsetFeedingAnimals>30</optimalityOffsetFeedingAnimals>
+      <ingestEffect>EatVegetarian</ingestEffect>
+      <ingestSound>RawVegetable_Eat</ingestSound>
+    </ingestible>
+    <comps>
+      <li Class="CompProperties_Ingredients">
+        <performMergeCompatibilityChecks>false</performMergeCompatibilityChecks>
+      </li>
+    </comps>
+  </ThingDef>
+  
+  <ThoughtDef>
+    <defName>AteOriginalShit</defName>
+    <showBubble>true</showBubble>
+    <icon>Things/Food/Origin/Origin_B</icon>
+    <durationDays>1</durationDays>
+    <stages>
+      <li>
+        <label>Eating shit</label>
+        <description>What did I eat just now? It can't be shit, can it!</description>
+        <baseMoodEffect>-15</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+</Defs>

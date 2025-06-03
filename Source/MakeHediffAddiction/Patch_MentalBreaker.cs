@@ -31,7 +31,7 @@ namespace MakeHediffAddiction
                         //强制开始指定的精神状态
                         bool ok = pawn.mindState.mentalStateHandler.TryStartMentalState(
                             mapping.mentalState,
-                            reason: $"Triggered by {mapping.hediff.label}",
+                            reason: "MentalStateReason_Hediff".Translate(mapping.hediff.label),
                             forced: true
                         );
 

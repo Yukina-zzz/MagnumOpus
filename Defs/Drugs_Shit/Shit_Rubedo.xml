@@ -106,7 +106,7 @@
             <ComfyTemperatureMin>-40</ComfyTemperatureMin>
             <ComfyTemperatureMax>40</ComfyTemperatureMax>
 			<Flammability>-1.0</Flammability><!--易燃性-->
-			<InjuryHealingFactor>1.25</InjuryHealingFactor><!--愈合能力-->
+			<InjuryHealingFactor>2</InjuryHealingFactor><!--愈合能力-->
 			<ImmunityGainSpeed>0.40</ImmunityGainSpeed><!--免疫速度-->
 			<ToxicEnvironmentResistance>1</ToxicEnvironmentResistance><!--毒耐受-->
 			<ToxicResistance>1</ToxicResistance><!--毒抗性-->

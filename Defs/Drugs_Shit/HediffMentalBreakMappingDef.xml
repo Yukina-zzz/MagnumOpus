@@ -2,7 +2,7 @@
 <Defs>
 
   <HediffMentalBreakMappingSetDef>
-    <defName>DrugMentalBreakMappings</defName>
+    <defName>DrugMentalBreakMagnumOpus</defName>
     <mappings>
       <li>
         <!-- 触发的 Hediff  -->
@@ -11,9 +11,6 @@
         <mentalState>Berserk</mentalState>
         <!-- 可选：进入崩溃后再额外添加的新 Hediff -->
         <onBreakDoers>
-          <li Class="IngestionOutcomeDoer_GiveHediff">
-            <hediffDef>Regeneration</hediffDef>
-          </li>
           <!-- <li Class="IngestionOutcomeDoer_GiveHediff">
             <hediffDef>AlbedoHigh</hediffDef>
             <severity>1.2</severity>

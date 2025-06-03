@@ -24,7 +24,7 @@
 				<CarryWeight>15</CarryWeight>
 				<ArmorRating_Sharp>5</ArmorRating_Sharp>
 				<ArmorRating_Blunt>10</ArmorRating_Blunt>
-				<InjuryHealingFactor>0.2</InjuryHealingFactor>
+				<InjuryHealingFactor>0.4</InjuryHealingFactor>
 			</statOffsets>
 		</value>
 	</Operation>
@@ -43,7 +43,7 @@
 				<ComfyTemperatureMin>-20</ComfyTemperatureMin>
 				<ComfyTemperatureMax>20</ComfyTemperatureMax>
 				<Flammability>-0.5</Flammability>
-				<InjuryHealingFactor>0.6</InjuryHealingFactor>
+				<InjuryHealingFactor>0.8</InjuryHealingFactor>
 				<ToxicEnvironmentResistance>0.4</ToxicEnvironmentResistance><!--毒耐受-->
 				<ToxicResistance>0.4</ToxicResistance><!--毒抗性-->
 				<WorkSpeedGlobal>0.5</WorkSpeedGlobal><!--全局工作速度-->
@@ -65,7 +65,7 @@
 				<ComfyTemperatureMin>-40</ComfyTemperatureMin>
 				<ComfyTemperatureMax>40</ComfyTemperatureMax>
 				<Flammability>-1.0</Flammability><!--易燃性-->
-				<InjuryHealingFactor>1.25</InjuryHealingFactor><!--愈合能力-->
+				<InjuryHealingFactor>2</InjuryHealingFactor><!--愈合能力-->
 				<ImmunityGainSpeed>0.40</ImmunityGainSpeed><!--免疫速度-->
 				<ToxicEnvironmentResistance>1</ToxicEnvironmentResistance><!--毒耐受-->
 				<ToxicResistance>1</ToxicResistance><!--毒抗性-->
@@ -89,7 +89,7 @@
 				<ComfyTemperatureMin>-80</ComfyTemperatureMin>
 				<ComfyTemperatureMax>80</ComfyTemperatureMax>
 				<Flammability>-1</Flammability><!--易燃性-->
-				<InjuryHealingFactor>2.0</InjuryHealingFactor><!--愈合能力-->
+				<InjuryHealingFactor>4.0</InjuryHealingFactor><!--愈合能力-->
 				<ImmunityGainSpeed>1.0</ImmunityGainSpeed><!--免疫速度-->
 				<ToxicEnvironmentResistance>1</ToxicEnvironmentResistance><!--毒耐受-->
 				<ToxicResistance>1</ToxicResistance><!--毒抗性-->

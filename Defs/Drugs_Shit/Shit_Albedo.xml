@@ -101,7 +101,7 @@
 			<CarryingCapacity>25</CarryingCapacity>
 			<ArmorRating_Sharp>0.40</ArmorRating_Sharp>
 			<ArmorRating_Blunt>0.40</ArmorRating_Blunt>
-			<InjuryHealingFactor>0.2</InjuryHealingFactor><!--愈合能力-->
+			<InjuryHealingFactor>0.4</InjuryHealingFactor><!--愈合能力-->
 		  </statOffsets>
           <capMods>
             <li>
